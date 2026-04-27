@@ -4,12 +4,17 @@
     padding: 0;
 }
 body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    padding: 40px;
     backdrop-filter: brightness(0.7) blur(2px);
 }
 img{
@@ -26,4 +31,24 @@ h1{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.menu_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+}
+.menu_button{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+}
+.menu_button:hover{
+    border: 1px solid #fff;
 }
